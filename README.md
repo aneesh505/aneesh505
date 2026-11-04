@@ -1,7 +1,7 @@
 ### [![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/aneesh505/badge.svg)](https://hub.xerj.org/contributors/aneesh505)
 
 <p align="center">
-  <img src="header_banner.svg" alt="Aeshvarya Awasthi Banner" width="100%" />
+  <img src="header_banner.svg" alt="Aneesh Suvarna ASCII Banner" width="100%" />
 </p>
 
 <p align="center">
