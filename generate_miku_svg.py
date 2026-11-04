@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 generate_miku_svg.py
-Generates a perfectly centered, clean Miku ASCII art SVG.
+Generates a centered, well-aligned Miku ASCII art SVG.
 """
 
 from pathlib import Path
@@ -49,18 +49,20 @@ MIKU_ART = [
     "⣿⣿⣿⡆⠀⠀⣾⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
     "⢰⣿⣿⣿⣷⠀⠀⠸⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
     "⣾⣿⣿⣿⣻⡇⠀⠀⠈⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⢹⣿⣿⣟⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+    "⠹⣿⣿⣿⢟⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+    "⠘⣿⣿⣿⣯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+    "⠀⠙⢿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 ]
 
 def generate_svg():
     lines_svg = []
-    y_start = 22
+    y_start = 20
     for line in MIKU_ART:
         safe_line = line.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        lines_svg.append(f'    <text x="28" y="{y_start}" class="mono" xml:space="preserve">{safe_line}</text>')
-        y_start += 14.8
+        lines_svg.append(f'    <text x="35" y="{y_start}" class="mono" xml:space="preserve">{safe_line}</text>')
+        y_start += 14.2
 
-    svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="564" height="676" viewBox="0 0 564 676" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace">
+    svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="530" height="676" viewBox="0 0 530 676" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace">
   <defs>
     <linearGradient id="mikuGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%"  stop-color="#39c5bb"/>
@@ -70,7 +72,7 @@ def generate_svg():
         from="0 .5 .5" to="360 .5 .5" dur="16s" repeatCount="indefinite"/>
     </linearGradient>
     <style>
-      .mono {{ font-size:9.5px; font-weight:600; fill:url(#mikuGrad); white-space:pre; }}
+      .mono {{ font-size:9.2px; font-weight:600; fill:url(#mikuGrad); white-space:pre; }}
       #mikuContainer {{ animation: mikuBob 3s ease-in-out infinite; transform-origin: center; }}
       @keyframes mikuBob {{ 0%,100% {{ transform: translateY(0px); }} 50% {{ transform: translateY(-4px); }} }}
     </style>
@@ -81,7 +83,7 @@ def generate_svg():
 {'\n'.join(lines_svg)}
   </g>
 
-  <rect x="0.75" y="0.75" width="562.5" height="674.5" rx="13" fill="none" stroke="#39c5bb" stroke-opacity="0.3" stroke-width="1.5"/>
+  <rect x="0.75" y="0.75" width="528.5" height="674.5" rx="13" fill="none" stroke="#39c5bb" stroke-opacity="0.3" stroke-width="1.5"/>
 </svg>
 """
     return svg_content
