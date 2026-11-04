@@ -16,21 +16,21 @@
   <rect width="100%" height="100%" fill="#0d1117" rx="14"/>
 
   <g id="mikuContainer">
-    <text x="265" y="22" class="mono" text-anchor="middle" xml:space="preserve">                     ⢠⠦⣄⣠⠴⠒⠒⠉⠒⠶⣄⡏⣶</text>
-    <text x="265" y="36.0" class="mono" text-anchor="middle" xml:space="preserve">                     ⢸⣠⡞⣡⠀⢠⡀⠀⢦⡀⢹⣷⣼⣄</text>
-    <text x="265" y="50.0" class="mono" text-anchor="middle" xml:space="preserve">                     ⣸⡿⠁⣿⠟⣷⣿⢦⡈⣇⠀⢻⣿⣈⢷⡄</text>
-    <text x="265" y="64.0" class="mono" text-anchor="middle" xml:space="preserve">                    ⢠⣿⡇⣶⣻⣀⠘⣿⣀⣹⣿⣰⣼⡟⣯⠟⣿⡄</text>
-    <text x="265" y="78.0" class="mono" text-anchor="middle" xml:space="preserve">                    ⢸⣿⡇⣿⡿⠿⠋⠉⠋⠛⢿⣿⣿⡇⠈⢦⡸⣾⣆</text>
-    <text x="265" y="92.0" class="mono" text-anchor="middle" xml:space="preserve">                    ⢸⣿⡇⠛⣷⣄⠀⠀⠀⠀⣸⠟⠃⠉⠀⠈⢷⣩⡻⣄</text>
-    <text x="265" y="106.0" class="mono" text-anchor="middle" xml:space="preserve">                    ⢸⣿⠹⡄⠈⠙⠒⢤⣴⣾⠉⠁⣀⡀⠀⠀⠀⠹⣟⢮⡳⣄</text>
-    <text x="265" y="120.0" class="mono" text-anchor="middle" xml:space="preserve">                    ⣼⣿⠀⣿⠀⣀⣴⣿⡏⣀⡬⠟⠁⠈⣆⠀⠀⠀⠘⢧⡉⢿⣧⡀</text>
-    <text x="265" y="134.0" class="mono" text-anchor="middle" xml:space="preserve">                  ⢠⡿⣿⠀⢻⣫⠉⣽⡟⠉⡅⢀⣆⠀⢠⣿⠀⠀⠀⠀⠀⠹⣦⡉⠻⢦⡀⡄</text>
-    <text x="265" y="148.0" class="mono" text-anchor="middle" xml:space="preserve">                  ⣸⢗⣿⢀⡷⠁⣸⡿⠁⠀⠀⢸⣿⠃⣄⣈⡆⠀⠀⠀⠀⠀⠈⠫⣱⠦⣌⡓⢤⣀</text>
-    <text x="265" y="162.0" class="mono" text-anchor="middle" xml:space="preserve">                ⢰⣇⣾⣿⢟⡇⢀⣿⡇⠀⢀⣰⢸⡌⢿⣿⢻⡟⣃⠀⠀⠀⠰⡂⠠⠌⠲⢤⣙⣻⠛⠓⠶⢦⡤⣄⣀⡀</text>
-    <text x="265" y="176.0" class="mono" text-anchor="middle" xml:space="preserve">              ⣠⣿⣻⣿⠏⣾⠃⢸⢽⡇⠀⡏⠁⡶⠁⠈⣿⣎⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠒⠶⢤⣀⠈⠻⣄</text>
-    <text x="265" y="190.0" class="mono" text-anchor="middle" xml:space="preserve">            ⢠⣴⣿⠟⠁⡼⠀⣿⠀⡟⢸⡇⢰⠃⢸⠇⠀⠀⢹⣷⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣷⣄⠘⣧</text>
-    <text x="265" y="204.0" class="mono" text-anchor="middle" xml:space="preserve">          ⢀⣀⣤⣾⠟⠋⠀⣠⡼⢁⣼⣿⢠⣧⢾⡇⠘⡀⠸⡇⠀⠀⠘⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡉⠚⢧⠹⣷</text>
-    <text x="265" y="218.0" class="mono" text-anchor="middle" xml:space="preserve">  ⢀⣠⡴⠖⢋⣽⡿⠥⠖⠚⠉⢁⣴⣾⣿⠃⢈⠀⢸⠇⠀⠁⠀⢳⡀⠀⠀⣿⣿⣽⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢧⡇</text>
+    <text x="265" y="22" class="mono" text-anchor="middle" xml:space="preserve">⢠⠦⣄⣠⠴⠒⠒⠉⠒⠶⣄⡏⣶</text>
+    <text x="265" y="36.0" class="mono" text-anchor="middle" xml:space="preserve">⢸⣠⡞⣡⠀⢠⡀⠀⢦⡀⢹⣷⣼⣄</text>
+    <text x="265" y="50.0" class="mono" text-anchor="middle" xml:space="preserve">⣸⡿⠁⣿⠟⣷⣿⢦⡈⣇⠀⢻⣿⣈⢷⡄</text>
+    <text x="265" y="64.0" class="mono" text-anchor="middle" xml:space="preserve">⢠⣿⡇⣶⣻⣀⠘⣿⣀⣹⣿⣰⣼⡟⣯⠟⣿⡄</text>
+    <text x="265" y="78.0" class="mono" text-anchor="middle" xml:space="preserve">⢸⣿⡇⣿⡿⠿⠋⠉⠋⠛⢿⣿⣿⡇⠈⢦⡸⣾⣆</text>
+    <text x="265" y="92.0" class="mono" text-anchor="middle" xml:space="preserve">⢸⣿⡇⠛⣷⣄⠀⠀⠀⠀⣸⠟⠃⠉⠀⠈⢷⣩⡻⣄</text>
+    <text x="265" y="106.0" class="mono" text-anchor="middle" xml:space="preserve">⢸⣿⠹⡄⠈⠙⠒⢤⣴⣾⠉⠁⣀⡀⠀⠀⠀⠹⣟⢮⡳⣄</text>
+    <text x="265" y="120.0" class="mono" text-anchor="middle" xml:space="preserve">⣼⣿⠀⣿⠀⣀⣴⣿⡏⣀⡬⠟⠁⠈⣆⠀⠀⠀⠘⢧⡉⢿⣧⡀</text>
+    <text x="265" y="134.0" class="mono" text-anchor="middle" xml:space="preserve">⢠⡿⣿⠀⢻⣫⠉⣽⡟⠉⡅⢀⣆⠀⢠⣿⠀⠀⠀⠀⠀⠹⣦⡉⠻⢦⡀⡄</text>
+    <text x="265" y="148.0" class="mono" text-anchor="middle" xml:space="preserve">⣸⢗⣿⢀⡷⠁⣸⡿⠁⠀⠀⢸⣿⠃⣄⣈⡆⠀⠀⠀⠀⠀⠈⠫⣱⠦⣌⡓⢤⣀</text>
+    <text x="265" y="162.0" class="mono" text-anchor="middle" xml:space="preserve">⢰⣇⣾⣿⢟⡇⢀⣿⡇⠀⢀⣰⢸⡌⢿⣿⢻⡟⣃⠀⠀⠀⠰⡂⠠⠌⠲⢤⣙⣻⠛⠓⠶⢦⡤⣄⣀⡀</text>
+    <text x="265" y="176.0" class="mono" text-anchor="middle" xml:space="preserve">⣠⣿⣻⣿⠏⣾⠃⢸⢽⡇⠀⡏⠁⡶⠁⠈⣿⣎⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠒⠶⢤⣀⠈⠻⣄</text>
+    <text x="265" y="190.0" class="mono" text-anchor="middle" xml:space="preserve">⢠⣴⣿⠟⠁⡼⠀⣿⠀⡟⢸⡇⢰⠃⢸⠇⠀⠀⢹⣷⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣷⣄⠘⣧</text>
+    <text x="265" y="204.0" class="mono" text-anchor="middle" xml:space="preserve">⢀⣀⣤⣾⠟⠋⠀⣠⡼⢁⣼⣿⢠⣧⢾⡇⠘⡀⠸⡇⠀⠀⠘⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡉⠚⢧⠹⣷</text>
+    <text x="265" y="218.0" class="mono" text-anchor="middle" xml:space="preserve">⢀⣠⡴⠖⢋⣽⡿⠥⠖⠚⠉⢁⣴⣾⣿⠃⢈⠀⢸⠇⠀⠁⠀⢳⡀⠀⠀⣿⣿⣽⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢧⡇</text>
     <text x="265" y="232.0" class="mono" text-anchor="middle" xml:space="preserve">⣀⣤⣾⠛⠁⣠⡼⠋⠁⠀⢀⣀⢀⣴⣿⣿⠟⠁⠀⠀⣷⠋⠂⠀⠀⠀⠀⠳⡀⠀⢹⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡿⠀⠀⠀⢸⠧</text>
     <text x="265" y="246.0" class="mono" text-anchor="middle" xml:space="preserve">⢀⡠⠖⠋⣩⠶⢋⡴⠋⠁⠀⠀⠿⣭⡿⣿⠿⠟⢉⣷⣄⠀⢀⣼⣿⡄⠀⠀⠀⠀⠀⢀⣹⠄⠀⢹⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠐⡧</text>
     <text x="265" y="260.0" class="mono" text-anchor="middle" xml:space="preserve">⣸⣄⣴⣛⣡⠞⠋⠀⠀⠀⠀⠀⠀⠀⣭⣤⣴⣾⣿⣿⣿⣷⣿⣿⣿⣷⣤⣴⣶⣾⣿⣿⣿⣆⠀⢈⣿⣷⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⢑</text>

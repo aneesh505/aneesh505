@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 generate_miku_svg.py
-Generates a properly centered Miku ASCII art SVG with text-anchor="middle"
-and dynamic coordinate calculation so nothing gets cut off or pushed left.
+Strips internal whitespace padding from each ASCII line so that when rendered
+with text-anchor="middle", both the head and legs align perfectly centered.
 """
 
 from pathlib import Path
@@ -59,8 +59,8 @@ def generate_svg():
     lines_svg = []
     y_start = 22
     for line in MIKU_ART:
-        safe_line = line.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        # Using text-anchor="middle" at x="265" (half of 530px width)
+        stripped = line.strip()
+        safe_line = stripped.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         lines_svg.append(f'    <text x="265" y="{y_start}" class="mono" text-anchor="middle" xml:space="preserve">{safe_line}</text>')
         y_start += 14.0
 
