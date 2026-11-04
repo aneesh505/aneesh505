@@ -2,14 +2,13 @@
 # -*- coding: utf-8 -*-
 """
 generate_header_svg.py
-Draws ANEESH using crisp thick SVG text elements with system fallback fonts
-so it's perfectly bold and thick.
+Generates an ASCII-art style header banner SVG spelling "ANEESH"
+using a guaranteed single-width monospace font setup.
 """
 
 from pathlib import Path
 
-def build_svg():
-    return """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" font-family="'Inter','Segoe UI','Helvetica Neue',Arial,sans-serif">
+ASCII_BW_BANNER_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" font-family="'Courier New', Courier, monospace">
   <defs>
     <!-- Pure Black to Dark Charcoal Gradient Background -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -17,7 +16,7 @@ def build_svg():
       <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
 
-    <!-- Shimmer Gradient for Text -->
+    <!-- Shimmer Gradient for ASCII Text -->
     <linearGradient id="bwGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
       <stop offset="0%" stop-color="#8b949e"/>
       <stop offset="50%" stop-color="#ffffff"/>
@@ -43,11 +42,27 @@ def build_svg():
     <circle cx="1020" cy="80" r="1" fill="#ffffff" opacity="0.7"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite"/></circle>
     <circle cx="1100" cy="270" r="1.2" fill="#8b949e" opacity="0.5"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.5s" repeatCount="indefinite"/></circle>
 
-    <!-- Thick Bold Name Header -->
-    <text x="600" y="165" text-anchor="middle" font-size="92" font-weight="900" letter-spacing="4" fill="url(#bwGrad)">ANEESH</text>
+    <!-- Thick Block ASCII Art for ANEESH using standard ASCII characters (no special unicode blocks) -->
+    <text x="600" y="85" text-anchor="middle" font-size="20" font-weight="900" fill="url(#bwGrad)" letter-spacing="2" xml:space="preserve">
+      _    _   _ _____ _____ ____  _   _
+    </text>
+    <text x="600" y="112" text-anchor="middle" font-size="20" font-weight="900" fill="url(#bwGrad)" letter-spacing="2" xml:space="preserve">
+     / \  | \ | | ____| ____/ ___|| | | |
+    </text>
+    <text x="600" y="139" text-anchor="middle" font-size="20" font-weight="900" fill="url(#bwGrad)" letter-spacing="2" xml:space="preserve">
+    / _ \ |  \| |  _| |  _| \___ \| |_| |
+    </text>
+    <text x="600" y="166" text-anchor="middle" font-size="20" font-weight="900" fill="url(#bwGrad)" letter-spacing="2" xml:space="preserve">
+    / ___ \| |\  | |___| |___ ___) |  _  |
+    </text>
+    <text x="600" y="193" text-anchor="middle" font-size="20" font-weight="900" fill="url(#bwGrad)" letter-spacing="2" xml:space="preserve">
+    /_/   \_\_| \_|_____|_____|____/|_| |_|
+    </text>
 
     <!-- Subtitle -->
-    <text x="600" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#6e7681" letter-spacing="5">FULL-STACK WEB DEVELOPER  •  OPEN SOURCE  •  BUILDER</text>
+    <text x="600" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#6e7681" letter-spacing="4">
+      FULL-STACK WEB DEVELOPER  •  OPEN SOURCE  •  BUILDER
+    </text>
   </g>
 
   <!-- Clean Border Frame -->
@@ -57,8 +72,8 @@ def build_svg():
 
 def main():
     out_path = Path("header_banner.svg")
-    out_path.write_text(build_svg(), encoding="utf-8")
-    print(f"Successfully generated {out_path.absolute()}")
+    out_path.write_text(ASCII_BW_BANNER_SVG, encoding="utf-8")
+    print(f"Successfully generated monochrome ASCII banner {out_path.absolute()}")
 
 if __name__ == "__main__":
     main()
