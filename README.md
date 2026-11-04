@@ -1,4 +1,3 @@
-### [![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/aneesh505/badge.svg)](https://hub.xerj.org/contributors/aneesh505)
 
 <h1 align="center">Hi 👋, I'm Aneesh</h1>
 <h3 align="center">A passionate developer, tech enthusiast, and open-source contributor from India.</h3>
@@ -16,6 +15,7 @@
 - 💬 Ask me about coding, web technologies, or anything tech-related!
 
 ---
+### [![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/aneesh505/badge.svg)](https://hub.xerj.org/contributors/aneesh505)
 
 ### 💻 Languages & Tech Stack
 <p>
