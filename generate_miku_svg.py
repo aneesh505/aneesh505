@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 generate_miku_svg.py
-Converts the detailed braille/ASCII art of Hatsune Miku into a clean,
-fully-rendered SVG with a dark glowing theme.
+Generates a perfectly centered, clean Miku ASCII art SVG.
 """
 
 from pathlib import Path
@@ -30,8 +29,8 @@ MIKU_ART = [
     "⠰⣏⡿⢫⡞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣹⠿⠿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⢀",
     "⢀⣿⡵⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⢀⡜⠀⠀⠀⠀⠀⠀⢀⠎",
     "⢠⢸⡟⠹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡧⠤⢙⠛⠋⠛⠛⠿⠿⢿⡟⠛⠉⠁⠀⠀⠀⠀⠀⠠⠐⠀⠀⠀⠀⠀⠀⠀⢀⡼⢀⠀⠄⠀⠀⡀⡀⠀⠀",
-    "⢸⣎⡇⠀⠳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢷⠀⡀⢰⡅⠀⠀⠀⠀⠀⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⡿⢋⠞⠀`⣮⠎⠀⠀⠀",
-    "⢿⣷⠀⠀⠈⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣶⣿⣇⠀⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡾⠋⣠⠋`⣴⠟⠁⠀⠀⠀⠀",
+    "⢸⣎⡇⠀⠳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢷⠀⡀⢰⡅⠀⠀⠀⠀⠀⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⡿⢋⠞⠀⣮⠎⠀⠀⠀",
+    "⢿⣷⠀⠀⠈⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣶⣿⣇⠀⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡾⠋⣠⠋⣴⠟⠁⠀⠀⠀⠀",
     "⠘⣏⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⢹⣻⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠟⢡⠞⣁⣴⠟⠁⠀⠀⠀⠀⠀⠀",
     "⠸⡄⠳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⢄⡀⠀⠀⠘⣿⣿⣿⯯⢶⢧⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡾⢁⣴⠿⠚⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀",
     "⠹⡄⠙⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠢⣄⠈⢿⣿⣿⯯⣝⣾⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⡯⢖⡿⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
@@ -55,12 +54,11 @@ MIKU_ART = [
 
 def generate_svg():
     lines_svg = []
-    y_start = 24
+    y_start = 22
     for line in MIKU_ART:
-        # Escape any special XML chars if needed
         safe_line = line.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        lines_svg.append(f'    <text x="35" y="{y_start}" class="mono" xml:space="preserve">{safe_line}</text>')
-        y_start += 15
+        lines_svg.append(f'    <text x="28" y="{y_start}" class="mono" xml:space="preserve">{safe_line}</text>')
+        y_start += 14.8
 
     svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="564" height="676" viewBox="0 0 564 676" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace">
   <defs>
@@ -72,7 +70,7 @@ def generate_svg():
         from="0 .5 .5" to="360 .5 .5" dur="16s" repeatCount="indefinite"/>
     </linearGradient>
     <style>
-      .mono {{ font-size:10px; font-weight:600; fill:url(#mikuGrad); white-space:pre; }}
+      .mono {{ font-size:9.5px; font-weight:600; fill:url(#mikuGrad); white-space:pre; }}
       #mikuContainer {{ animation: mikuBob 3s ease-in-out infinite; transform-origin: center; }}
       @keyframes mikuBob {{ 0%,100% {{ transform: translateY(0px); }} 50% {{ transform: translateY(-4px); }} }}
     </style>
