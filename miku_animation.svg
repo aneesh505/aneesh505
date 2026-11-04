@@ -46,20 +46,20 @@
     <text x="35" y="400.0" class="mono" xml:space="preserve">⠘⢦⡀⠀⠙⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣻⢿⣿⡍⠑⠒⠒⣒⣾⣷⠿⠛⣋⡵⠚⠁⠀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
     <text x="35" y="414.0" class="mono" xml:space="preserve">⠙⠢⣄⡀⠀⠙⠓⠒⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣷⡚⠛⠉⠁⠀⠀⠐⠋⢀⡀⢀⡤⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
     <text x="35" y="428.0" class="mono" xml:space="preserve">⠉⠉⠙⠋⠛⠛⣹⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="442.0" class="mono" xml:space="preserve">⣿⣿⣿⣻⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="456.0" class="mono" xml:space="preserve">⣿⣿⣿⣿⢿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="470.0" class="mono" xml:space="preserve">⢀⣿⣿⣿⡏⠸⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="484.0" class="mono" xml:space="preserve">⢸⣿⣿⣿⠁⠀⢹⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="498.0" class="mono" xml:space="preserve">⢸⣿⣿⡏⠀⠀⠈⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="512.0" class="mono" xml:space="preserve">⢸⣿⣿⠀⠀⠀⠀⢼⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="526.0" class="mono" xml:space="preserve">⣼⣿⣿⠀⠀⠀⠀⣼⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="540.0" class="mono" xml:space="preserve">⠰⣿⣿⣿⠀⠀⠀⢀⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="554.0" class="mono" xml:space="preserve">⣿⣿⣿⡆⠀⠀⣾⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="568.0" class="mono" xml:space="preserve">⢰⣿⣿⣿⣷⠀⠀⠸⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="582.0" class="mono" xml:space="preserve">⣾⣿⣿⣿⣻⡇⠀⠀⠈⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="596.0" class="mono" xml:space="preserve">⠹⣿⣿⣿⢟⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="610.0" class="mono" xml:space="preserve">⠘⣿⣿⣿⣯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-    <text x="35" y="624.0" class="mono" xml:space="preserve">⠀⠙⢿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="50" y="442.0" class="mono" xml:space="preserve">                       ⣿⣿⣿⣻⣿⣿⣿⣿⣇</text>
+    <text x="50" y="456.0" class="mono" xml:space="preserve">                       ⣿⣿⣿⣿⢿⣿⣿⣿</text>
+    <text x="50" y="470.0" class="mono" xml:space="preserve">                     ⢀⣿⣿⣿⡏⠸⣿⣿⣿</text>
+    <text x="50" y="484.0" class="mono" xml:space="preserve">                     ⢸⣿⣿⣿⠁⠀⢹⣿⣿⡄</text>
+    <text x="50" y="498.0" class="mono" xml:space="preserve">                     ⢸⣿⣿⡏⠀⠀⠈⣿⣿⡆</text>
+    <text x="50" y="512.0" class="mono" xml:space="preserve">                     ⢸⣿⣿⠀⠀⠀⠀⢼⣿⣷⡀</text>
+    <text x="50" y="526.0" class="mono" xml:space="preserve">                     ⣼⣿⣿⠀⠀⠀⠀⣼⣿⣿⡇</text>
+    <text x="50" y="540.0" class="mono" xml:space="preserve">                   ⠰⣿⣿⣿⠀⠀⠀⢀⣿⣿⣿⡇</text>
+    <text x="50" y="554.0" class="mono" xml:space="preserve">                     ⣿⣿⣿⡆⠀⠀⣾⣿⣿⣿⣧</text>
+    <text x="50" y="568.0" class="mono" xml:space="preserve">                   ⢰⣿⣿⣿⣷⠀⠀⠸⣿⣿⣿⠟</text>
+    <text x="50" y="582.0" class="mono" xml:space="preserve">                   ⣾⣿⣿⣿⣻⡇⠀⠀⠈⠋⠉</text>
+    <text x="50" y="596.0" class="mono" xml:space="preserve">                   ⢹⣿⣿⣟⠟</text>
+    <text x="50" y="610.0" class="mono" xml:space="preserve">                   ⠘⣿⣿⣿⣯</text>
+    <text x="50" y="624.0" class="mono" xml:space="preserve">                   ⠀⠙⢿⣿⣿⡀</text>
   </g>
 
   <rect x="0.75" y="0.75" width="528.5" height="674.5" rx="13" fill="none" stroke="#39c5bb" stroke-opacity="0.3" stroke-width="1.5"/>

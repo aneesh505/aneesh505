@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 generate_miku_svg.py
-Embeds Miku as a clean pre-formatted text block with x="35" left-aligned
-so every single character aligns exactly as intended in the raw art.
+Keeps the upper body formatting intact, but gently shifts the lower leg/feet lines
+to the center so the entire figure is balanced.
 """
 
 from pathlib import Path
@@ -39,28 +39,31 @@ MIKU_ART = [
     "⠘⢦⡀⠀⠙⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣻⢿⣿⡍⠑⠒⠒⣒⣾⣷⠿⠛⣋⡵⠚⠁⠀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
     "⠙⠢⣄⡀⠀⠙⠓⠒⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣷⡚⠛⠉⠁⠀⠀⠐⠋⢀⡀⢀⡤⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
     "⠉⠉⠙⠋⠛⠛⣹⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⣿⣿⣿⣻⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⣿⣿⣿⣿⢿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⢀⣿⣿⣿⡏⠸⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⢸⣿⣿⣿⠁⠀⢹⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⢸⣿⣿⡏⠀⠀⠈⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⢸⣿⣿⠀⠀⠀⠀⢼⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⣼⣿⣿⠀⠀⠀⠀⣼⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⠰⣿⣿⣿⠀⠀⠀⢀⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⣿⣿⣿⡆⠀⠀⣾⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⢰⣿⣿⣿⣷⠀⠀⠸⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⣾⣿⣿⣿⣻⡇⠀⠀⠈⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⠹⣿⣿⣿⢟⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⠘⣿⣿⣿⣯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⠀⠙⢿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+    # Legs / bottom lines shifted slightly right for center alignment
+    "                       ⣿⣿⣿⣻⣿⣿⣿⣿⣇",
+    "                       ⣿⣿⣿⣿⢿⣿⣿⣿",
+    "                     ⢀⣿⣿⣿⡏⠸⣿⣿⣿",
+    "                     ⢸⣿⣿⣿⠁⠀⢹⣿⣿⡄",
+    "                     ⢸⣿⣿⡏⠀⠀⠈⣿⣿⡆",
+    "                     ⢸⣿⣿⠀⠀⠀⠀⢼⣿⣷⡀",
+    "                     ⣼⣿⣿⠀⠀⠀⠀⣼⣿⣿⡇",
+    "                   ⠰⣿⣿⣿⠀⠀⠀⢀⣿⣿⣿⡇",
+    "                     ⣿⣿⣿⡆⠀⠀⣾⣿⣿⣿⣧",
+    "                   ⢰⣿⣿⣿⣷⠀⠀⠸⣿⣿⣿⠟",
+    "                   ⣾⣿⣿⣿⣻⡇⠀⠀⠈⠋⠉",
+    "                   ⢹⣿⣿⣟⠟",
+    "                   ⠘⣿⣿⣿⣯",
+    "                   ⠀⠙⢿⣿⣿⡀"
 ]
 
 def generate_svg():
     lines_svg = []
     y_start = 22
-    for line in MIKU_ART:
+    for i, line in enumerate(MIKU_ART):
+        # Upper body lines (0 to 29) left-aligned at x="35", lower legs (30+) shifted right for centering
+        x_pos = 50 if i >= 30 else 35
         safe_line = line.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        lines_svg.append(f'    <text x="35" y="{y_start}" class="mono" xml:space="preserve">{safe_line}</text>')
+        lines_svg.append(f'    <text x="{x_pos}" y="{y_start}" class="mono" xml:space="preserve">{safe_line}</text>')
         y_start += 14.0
 
     svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="530" height="676" viewBox="0 0 530 676" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace">
