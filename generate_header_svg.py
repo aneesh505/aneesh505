@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 generate_header_svg.py
-Generates a clean, precisely aligned black & white ASCII banner SVG.
+Generates a clean, perfectly centered monochrome ASCII banner SVG spelling "ANEESH".
 """
 
 from pathlib import Path
@@ -41,28 +41,28 @@ ASCII_BW_BANNER_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" he
     <circle cx="1020" cy="80" r="1" fill="#ffffff" opacity="0.7"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite"/></circle>
     <circle cx="1100" cy="270" r="1.2" fill="#8b949e" opacity="0.5"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.5s" repeatCount="indefinite"/></circle>
 
-    <!-- Perfectly Aligned ASCII Art Spelling ANEESH SUVARNA -->
-    <text x="600" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      █████╗ &#160;███╗ &#160; ██╗███████╗███████╗███████╗██╗ &#160; &#160; &#160;███████╗██╗ &#160; ██╗██╗ &#160; ██╗ █████╗ ██████╗ &#160;███╗ &#160; ██╗ █████╗
+    <!-- Perfectly Centered ASCII Art Spelling ANEESH -->
+    <text x="600" y="95" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      █████╗ &#160;███╗ &#160; ██╗███████╗███████╗███████╗██╗ &#160; &#160;
     </text>
-    <text x="600" y="112" text-anchor="middle" font-size="16" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ██╔══██╗████╗ &#160;██║██╔════╝██╔════╝██╔════╝██║ &#160; &#160; &#160;██╔════╝██║ &#160; ██║██║ &#160; ██║██╔══██╗██╔══██╗ ████╗ &#160;██║██╔══██╗
+    <text x="600" y="122" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      ██╔══██╗████╗ &#160;██║██╔════╝██╔════╝██╔════╝██║ &#160; &#160;
     </text>
-    <text x="600" y="134" text-anchor="middle" font-size="16" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ███████║██╔██╗ &#160;██║█████╗ &#160;█████╗ &#160;███████╗██║ &#160; &#160; &#160;███████╗██║ &#160; ██║██║ &#160; ██║███████║██████╔╝ ██╔██╗ &#160;██║███████║
+    <text x="600" y="149" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      ███████║██╔██╗ &#160;██║█████╗ &#160;█████╗ &#160;███████╗██║ &#160; &#160;
     </text>
-    <text x="600" y="156" text-anchor="middle" font-size="16" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ██╔══██║██║╚██╗ ██║██╔══╝ &#160;██╔══╝ &#160;╚════██║██║ &#160; &#160; &#160;╚════██║██║ &#160; ██║██║ &#160; ██║██╔══██║██╔══██╗ ██║╚██╗ ██║██╔══██║
+    <text x="600" y="176" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      ██╔══██║██║╚██╗ ██║██╔══╝ &#160;██╔══╝ &#160;╚════██║██║ &#160; &#160;
     </text>
-    <text x="600" y="178" text-anchor="middle" font-size="16" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ██║ &#160;██║██║ &#160;╚████║███████╗███████╗███████║███████╗███████║╚██████╔╝╚██████╔╝██║ &#160;██║██║ &#160;██║ ██║ &#160;╚████║██║ &#160;██║
+    <text x="600" y="203" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      ██║ &#160;██║██║ &#160;╚████║███████╗███████╗███████║███████╗
     </text>
-    <text x="600" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ╚═╝ &#160;╚═╝╚═╝ &#160; ╚═══╝╚══════╝╚══════╝╚══════╝╚══════╝╚══════╝ &#160;╚═════╝ &#160;╚═════╝ &#160;╚═╝ &#160;╚═╝╚═╝ &#160;╚═╝╚═╝ &#160; ╚═══╝╚═╝ &#160;╚═╝
+    <text x="600" y="230" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      ╚═╝ &#160;╚═╝╚═╝ &#160; ╚═══╝╚══════╝╚══════╝╚══════╝╚══════╝
     </text>
 
     <!-- Subtitle in ASCII style -->
-    <text x="600" y="270" text-anchor="middle" font-size="13" font-weight="bold" fill="#6e7681" letter-spacing="4">
+    <text x="600" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#6e7681" letter-spacing="4">
       FULL-STACK WEB DEVELOPER &#160;•&#160; OPEN SOURCE &#160;•&#160; BUILDER
     </text>
   </g>
