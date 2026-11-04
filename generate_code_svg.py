@@ -5,7 +5,6 @@ generate_code_svg.py
 Generates an animated typing code-snippet SVG for a GitHub profile README.
 """
 
-import sys
 from pathlib import Path
 
 SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" width="680" height="420" viewBox="0 0 680 420" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="14">
@@ -38,19 +37,19 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" width="680" height="42
   <line x1="0" y1="41" x2="680" y2="41" stroke="#21262d"/>
 
   <!-- Code Lines -->
-  <text x="26" y="68.0" clip-path="url(#cl0)" xml:space="preserve"><tspan fill="#ff7b72">class</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#79c0ff">Aneesh</tspan><tspan fill="#d2a8ff">:</tspan></text>
+  <text x="26" y="68.0" clip-path="url(#cl0)" xml:space="preserve"><tspan fill="#ff7b72">class</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#79c0ff">AneeshSuvarna</tspan><tspan fill="#d2a8ff">:</tspan></text>
   <text x="26" y="92.0" clip-path="url(#cl1)" xml:space="preserve"><tspan fill="#e6edf3">    </tspan><tspan fill="#ff7b72">def</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#d2a8ff">__init__</tspan><tspan fill="#e6edf3">(</tspan><tspan fill="#ffa657">self</tspan><tspan fill="#e6edf3">):</tspan></text>
-  <text x="26" y="116.0" clip-path="url(#cl2)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ffa657">self</tspan><tspan fill="#e6edf3">.</tspan><tspan fill="#79c0ff">role</tspan><tspan fill="#e6edf3"> = </tspan><tspan fill="#a5d6ff">"Full-Stack Developer &amp; AI Enthusiast"</tspan></text>
+  <text x="26" y="116.0" clip-path="url(#cl2)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ffa657">self</tspan><tspan fill="#e6edf3">.</tspan><tspan fill="#79c0ff">role</tspan><tspan fill="#e6edf3"> = </tspan><tspan fill="#a5d6ff">"Full-Stack Web Developer"</tspan></text>
   <text x="26" y="140.0" clip-path="url(#cl3)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ffa657">self</tspan><tspan fill="#e6edf3">.</tspan><tspan fill="#79c0ff">location</tspan><tspan fill="#e6edf3"> = </tspan><tspan fill="#a5d6ff">"India"</tspan></text>
-  <text x="26" y="164.0" clip-path="url(#cl4)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ffa657">self</tspan><tspan fill="#e6edf3">.</tspan><tspan fill="#79c0ff">focus</tspan><tspan fill="#e6edf3"> = </tspan><tspan fill="#a5d6ff">"Python, JavaScript, Open Source"</tspan></text>
+  <text x="26" y="164.0" clip-path="url(#cl4)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ffa657">self</tspan><tspan fill="#e6edf3">.</tspan><tspan fill="#79c0ff">focus</tspan><tspan fill="#e6edf3"> = </tspan><tspan fill="#a5d6ff">"React, Node.js, Open Source"</tspan></text>
 
   <text x="26" y="200.0" clip-path="url(#cl5)" xml:space="preserve"><tspan fill="#e6edf3">    </tspan><tspan fill="#ff7b72">def</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#d2a8ff">get_skills</tspan><tspan fill="#e6edf3">(</tspan><tspan fill="#ffa657">self</tspan><tspan fill="#e6edf3">):</tspan></text>
-  <text x="26" y="224.0" clip-path="url(#cl6)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ff7b72">return</tspan><tspan fill="#e6edf3"> [</tspan><tspan fill="#a5d6ff">"Python"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"JavaScript"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"HTML/CSS"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"Git"</tspan><tspan fill="#e6edf3">]</tspan></text>
-  <text x="26" y="248.0" clip-path="url(#cl7)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ff7b72">return</tspan><tspan fill="#e6edf3"> [</tspan><tspan fill="#a5d6ff">"React"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"Node.js"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"AI Tools"</tspan><tspan fill="#e6edf3">]</tspan></text>
+  <text x="26" y="224.0" clip-path="url(#cl6)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ff7b72">return</tspan><tspan fill="#e6edf3"> [</tspan><tspan fill="#a5d6ff">"JavaScript"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"Python"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"HTML/CSS"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"Git"</tspan><tspan fill="#e6edf3">]</tspan></text>
+  <text x="26" y="248.0" clip-path="url(#cl7)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ff7b72">return</tspan><tspan fill="#e6edf3"> [</tspan><tspan fill="#a5d6ff">"React"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"Node.js"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"Namamit"</tspan><tspan fill="#e6edf3">]</tspan></text>
   <text x="26" y="272.0" clip-path="url(#cl8)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#8b949e"># ...</tspan></text>
 
   <text x="26" y="308.0" clip-path="url(#cl9)" xml:space="preserve"><tspan fill="#e6edf3">    </tspan><tspan fill="#ff7b72">def</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#d2a8ff">status</tspan><tspan fill="#e6edf3">(</tspan><tspan fill="#ffa657">self</tspan><tspan fill="#e6edf3">):</tspan></text>
-  <text x="26" y="332.0" clip-path="url(#cl10)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ff7b72">return</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#a5d6ff">"Always learning, building &amp; shipping 🚀"</tspan></text>
+  <text x="26" y="332.0" clip-path="url(#cl10)" xml:space="preserve"><tspan fill="#e6edf3">        </tspan><tspan fill="#ff7b72">return</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#a5d6ff">"Always building &amp; shipping 🚀"</tspan></text>
 
   <!-- Blinking Cursor -->
   <rect x="26" y="53.0" width="8" height="16" fill="#79c0ff">

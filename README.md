@@ -1,7 +1,8 @@
 ### [![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/aneesh505/badge.svg)](https://hub.xerj.org/contributors/aneesh505)
 
-<h1 align="center">Hi 👋, I'm Aneesh</h1>
-<h3 align="center">A passionate developer, tech enthusiast, and open-source contributor from India.</h3>
+<p align="center">
+  <img src="header_banner.svg" alt="Aeshvarya Awasthi Banner" width="100%" />
+</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=aneesh505&color=blueviolet&style=flat-square" alt="Profile Views" />
