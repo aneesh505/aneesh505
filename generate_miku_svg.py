@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 generate_miku_svg.py
-Strips internal whitespace padding from each ASCII line so that when rendered
-with text-anchor="middle", both the head and legs align perfectly centered.
+Embeds Miku as a clean pre-formatted text block with x="35" left-aligned
+so every single character aligns exactly as intended in the raw art.
 """
 
 from pathlib import Path
@@ -59,9 +59,8 @@ def generate_svg():
     lines_svg = []
     y_start = 22
     for line in MIKU_ART:
-        stripped = line.strip()
-        safe_line = stripped.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        lines_svg.append(f'    <text x="265" y="{y_start}" class="mono" text-anchor="middle" xml:space="preserve">{safe_line}</text>')
+        safe_line = line.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        lines_svg.append(f'    <text x="35" y="{y_start}" class="mono" xml:space="preserve">{safe_line}</text>')
         y_start += 14.0
 
     svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="530" height="676" viewBox="0 0 530 676" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace">
