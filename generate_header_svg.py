@@ -7,7 +7,7 @@ Generates a clean, perfectly centered monochrome ASCII banner SVG spelling "ANEE
 
 from pathlib import Path
 
-ASCII_BW_BANNER_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace">
+ASCII_BW_BANNER_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" font-family="'Courier New',Courier,monospace">
   <defs>
     <!-- Pure Black to Dark Charcoal Gradient Background -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -42,27 +42,24 @@ ASCII_BW_BANNER_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" he
     <circle cx="1100" cy="270" r="1.2" fill="#8b949e" opacity="0.5"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.5s" repeatCount="indefinite"/></circle>
 
     <!-- Perfectly Centered ASCII Art Spelling ANEESH -->
-    <text x="600" y="95" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      █████╗ &#160;███╗ &#160; ██╗███████╗███████╗███████╗██╗ &#160; &#160;
+    <text x="600" y="100" text-anchor="middle" font-size="24" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      &#160;█████╗ &#160;███╗ &#160; ██╗███████╗███████╗███████╗██╗ &#160;
     </text>
-    <text x="600" y="122" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ██╔══██╗████╗ &#160;██║██╔════╝██╔════╝██╔════╝██║ &#160; &#160;
+    <text x="600" y="130" text-anchor="middle" font-size="24" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      &#160;██╔══██╗████╗ &#160;██║██╔════╝██╔════╝██╔════╝██║ &#160;
     </text>
-    <text x="600" y="149" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ███████║██╔██╗ &#160;██║█████╗ &#160;█████╗ &#160;███████╗██║ &#160; &#160;
+    <text x="600" y="160" text-anchor="middle" font-size="24" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      &#160;███████║██╔██╗ &#160;██║█████╗ &#160;█████╗ &#160;███████╗██║ &#160;
     </text>
-    <text x="600" y="176" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ██╔══██║██║╚██╗ ██║██╔══╝ &#160;██╔══╝ &#160;╚════██║██║ &#160; &#160;
+    <text x="600" y="190" text-anchor="middle" font-size="24" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      &#160;██╔══██║██║╚██╗ ██║██╔══╝ &#160;██╔══╝ &#160;╚════██║██║ &#160;
     </text>
-    <text x="600" y="203" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ██║ &#160;██║██║ &#160;╚████║███████╗███████╗███████║███████╗
-    </text>
-    <text x="600" y="230" text-anchor="middle" font-size="22" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
-      ╚═╝ &#160;╚═╝╚═╝ &#160; ╚═══╝╚══════╝╚══════╝╚══════╝╚══════╝
+    <text x="600" y="220" text-anchor="middle" font-size="24" font-weight="bold" fill="url(#bwGrad)" letter-spacing="1" xml:space="preserve">
+      &#160;██║ &#160;██║██║ &#160;╚████║███████╗███████╗███████╗███████╗
     </text>
 
     <!-- Subtitle in ASCII style -->
-    <text x="600" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#6e7681" letter-spacing="4">
+    <text x="600" y="280" text-anchor="middle" font-size="13" font-weight="bold" fill="#6e7681" letter-spacing="4">
       FULL-STACK WEB DEVELOPER &#160;•&#160; OPEN SOURCE &#160;•&#160; BUILDER
     </text>
   </g>
