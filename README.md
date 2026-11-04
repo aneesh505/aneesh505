@@ -11,7 +11,7 @@
 
 ---
 
-### 🚀 About Me & Miku
+### 🚀 About Me 
 
 <p align="center">
   <img src="aneesh_intro.svg" alt="Aneesh intro code animation" width="49%" />
